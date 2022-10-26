@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em html5</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>tente abrir esse site em vários disposotivos diferentes ou simplismente aumente 
+        e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagen flexivel">
+    </picture>
+    <h1>REPRODUZINDO ÁUDIOS</h1>
+    <p>vamos aprnder a reproduzir áudios em html5.</p>
+    <audio src="audio/musica01.mp3" controls></audio>
+    <audio preload="metadata" controls>
+        <source src="audio/musica01.mp3" type="audio/mpeg">
+        <source src="audio/musica01.ogg" type="audio/ogg">
+        <source src="audio/musica01.wav" type="audio/wav">
+    </audio>
+    <p>infeismenre seu navegador não consegue reproduzir áudio.
+        <a href="audio/musica01.mp3">clique aqui para baixar o arquivo.</a>
+    </p>
+    <h1>inserindo vodeos hospedados localmente</h1>
+    <p>
+        este video esta no meu próprio servidor
+    </p>
+    <video src="midia/Videomv4.m4v" width="300" poster="imagens/img64.jpg" controls></video>
+    <p>segue ex de oredens de videos compativeis com diferentes navegadores <br>
+    </p>
+    <video width="300" poster="imagens/img64.jpg" controls>
+        <source src="midia/Videomv4.m4v" type="video/mp4">
+        <source src="midia/video.mp4" type="video/mp4">
+        <p>seu navegador nao tem compatibilidade com reprodução de videos.</p>
+
+    </video>
+    <h1>INSERINDO VIDEOS DO YOUTUBE</h1>
+    <iframe width="300" height="315" src="https://www.youtube.com/embed/esa3HKIUwII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
